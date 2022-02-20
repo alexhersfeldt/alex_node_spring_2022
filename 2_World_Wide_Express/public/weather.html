@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forcast</title>
+</head>
+<body>
+    <h1>Today's forcast</h1>
+    <div id="forecast">
+        <p id="temp">
+        </p>
+    </div>
+    <script>
+        fetch('http://api.weatherstack.com/current?access_key=361bbf753b816d01b117fffca0e5ed2b&query=London')
+    .then(res => res.json())
+    .then(res => {
+        const tempDiv = document.getElementById("temp");
+        tempDiv.innerText = res.current.temperature + "degrees Celsius"
+    });
+    </script>
+</body>
+</html>

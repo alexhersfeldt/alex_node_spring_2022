@@ -42,7 +42,7 @@
 // Get all resources
 app.get("/movies", (req, res) => {
 
-     res.send(movies);
+     res.send({ data : movies });
 });
 
 
@@ -52,8 +52,11 @@ app.get("/movies/:ID", (req, res) => {
     const id = parseInt(req.params.ID);
 
     const requestedMovie = movies.filter((x) => x.id == id)[0];
+    // alternative:
+    // const requestedMovie = movie.find(movie => movie.id === Number(req.params.ID))
 
-    res.send(requestedMovie);
+    
+    requestedMovie ? res.send({ data : requestedMovie }) : res.send({error :"Movie not found"})
 });  
 
 
@@ -119,3 +122,11 @@ app.delete("/movies/:ID", (req, res) => {
 //  Server is on port 8080
 
  app.listen(8080);
+
+// class codes
+
+ // Get all resources
+app.get("/libraries", (req, res) => {
+
+    res.send(libraries);
+});
