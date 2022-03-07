@@ -12,7 +12,7 @@ section {
     text-align: left;
     width: 75%;
     margin: auto;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 section h3 {
@@ -54,9 +54,6 @@ code {
     margin: 30px auto;
     padding: 30px;
 }
-/*
-    Fonts
-*/
 
 .monospace {
     font-family: monospace;
@@ -68,9 +65,6 @@ code {
 .quote {
     font-style: italic;
 }
-/*
-    Nav
-*/
 
 nav {
     background-color: rgba(17, 6, 108, 0.73);
@@ -88,8 +82,8 @@ nav a {
     height: 100%;
     padding: 0 10px;
     text-decoration: none;
-    font-weight: bold;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
     color: rgba(143, 139, 162, 0.99);
 }
 
@@ -126,8 +120,8 @@ nav a div {
     color: #424242;
     text-decoration: none;
     font-weight: bold;
-    font-family: monospace;
-    font-size: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
     width: 140px;
     height: 50px;
     margin: 20px;
