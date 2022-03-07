@@ -54,13 +54,6 @@ code {
     margin: 30px auto;
     padding: 30px;
 }
-
-imgCode {
-    max-width: 600px;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px black;
-}
-
 /*
     Fonts
 */
@@ -69,7 +62,6 @@ imgCode {
     font-family: monospace;
     font-size: 1.3em;
 }
-
 .bold {
     font-weight: bold;
 }
@@ -118,7 +110,7 @@ nav a div {
 
 #backgroundImg {
     z-index: -3;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;

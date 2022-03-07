@@ -1,0 +1,59 @@
+<div class="content">
+    <section>
+        <h2>How to setup a basic webserver using Node.js, npm, and express</h2>
+        <br>
+        <h3>Step 1:</h3>
+        <p>
+            The first step is to create a directory to initiate your project in, then go to that directory
+            <br>
+            <code>
+                mkdir webServer
+                <br>
+                cd webServer
+            </code>
+        </p>
+        <br>
+        <h3>Step: 2</h3>
+        <p>
+            Then initiate a project with npm and install express
+            <br>
+            <code>
+                npm init
+                <br>
+                npm install express
+            </code>
+        </p>
+        <br>
+        <h3>Step: 3</h3>
+        <p>
+            Now set up your main javascript file:
+            <br>
+            First import express and initiate it in a variable:
+            <code>
+                const express = require("express");
+                <br>
+                const app = express();
+            </code>
+            <br>
+            Then invoke the "listen" function to access a port to host your server:
+            <code>
+                app.listen(3000);
+            </code>
+            <br>
+            Finally add the function to handle a simple api request:
+            <code>
+                app.get('/', (req, res) => { <br>
+                res.send('Hello World!'); <br>
+                });
+            </code>
+        </p>
+        <br>
+        <h3>Step: 4</h3>
+        <p>
+            You now have a functioning webserver at "localhost:3000/" <br>
+            You can add "app.post", "app.put! and so on, to create a fully functional CRUD RestAPI webserver! (if you add a database)
+        </p>
+
+
+    </section>
+</div>
