@@ -1,5 +1,5 @@
 body {
-    background-color: #3a3a3a;
+    background-color: rgba(58, 58, 58, 0.26);
     color: white;
     margin: 0
 }
@@ -16,7 +16,7 @@ section {
 }
 
 section h3 {
-    color: mediumseagreen;
+    color: #23203d;
     margin: 0;
 }
 
@@ -25,7 +25,7 @@ section p {
 }
 
 section p a {
-    color: yellowgreen;
+    color: #23203d;
 }
 
 code {
@@ -47,63 +47,18 @@ code {
 
 .content {
     text-align: center;
-    background-color: #2a2a2a;
-    color: darkseagreen;
+    background-color: rgba(143, 139, 162, 0.85);
+    color: #23203d;
     width: fit-content;
     max-width: 800px;
     margin: 30px auto;
     padding: 30px;
-    border-radius: 25px;
 }
 
-img {
+imgCode {
     max-width: 600px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px black;
-}
-
-/*
-    Colors
-*/
-
-.yellow {
-    color: #ffd507;
-}
-
-.yellowgreen {
-    color: yellowgreen;
-}
-
-.lightseagreen {
-    color: lightseagreen;
-}
-
-.dodgerblue {
-    color: dodgerblue;
-}
-
-.skyblue {
-    color: skyblue;
-}
-
-.deepskyblue {
-    color: deepskyblue;
-}
-
-.sandybrown {
-    color: sandybrown;
-}
-
-.ffffcf {
-    color: #ffffcf;
-}
-
-.grey {
-    color: grey;
-}
-
-.green {
-    color: #8bc34a;
 }
 
 /*
@@ -118,29 +73,23 @@ img {
 .bold {
     font-weight: bold;
 }
-
+.quote {
+    font-style: italic;
+}
 /*
     Nav
 */
 
 nav {
-    background-color: darkseagreen;
-    justify-content: space-between;
+    background-color: rgba(17, 6, 108, 0.73);
+    justify-content: space-evenly;
     box-shadow: 0 0 5px 2px black;
 }
 
-.nav-left, .nav-right {
+.nav-center {
     height: 30px;
     display: flex;
     align-items: center;
-}
-
-.nav-left {
-    padding-left: 20px;
-}
-
-.nav-right {
-    padding-right: 0px;
 }
 
 nav a {
@@ -149,12 +98,12 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-family: monospace;
-    color: green;
+    color: rgba(143, 139, 162, 0.99);
 }
 
 nav a:hover {
-    background-color: green;
-    color: greenyellow;
+    background-color: rgba(143, 139, 162, 0.73);
+    color: #11066c;
 }
 
 nav a div {
@@ -167,28 +116,34 @@ nav a div {
     Homepage
  */
 
+#backgroundImg {
+    z-index: -3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
 .topics {
-    /*width: 50%;*/
     margin: 0 auto;
 }
 
 .topics a {
-    background-color: darkseagreen;
-    color: green;
+    background-color: rgba(203, 203, 204, 0.8);
+    color: #424242;
     text-decoration: none;
     font-weight: bold;
     font-family: monospace;
     font-size: 1.6em;
     width: 140px;
-    height: 100px;
+    height: 50px;
     margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 5px 3px;
 }
 
 .topics a:hover {
-    background-color: green;
-    color: greenyellow;
+    background-color: rgb(173, 173, 210);
+    color: #1c1c1c;
 }
 
 .topics a div {
